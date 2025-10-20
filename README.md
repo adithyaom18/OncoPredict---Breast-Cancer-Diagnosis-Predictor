@@ -1,46 +1,97 @@
-# Breast cancer diagnosis predictor
+          🩺 Breast Cancer Diagnosis Predictor
 
-## Overview
+🧠 Overview: 
 
-The Breast Cancer Diagnosis app is a machine learning-powered tool designed to assist medical professionals in diagnosing breast cancer. Using a set of measurements, the app predicts whether a breast mass is benign or malignant. It provides a visual representation of the input data using a radar chart and displays the predicted diagnosis and probability of being benign or malignant. The app can be used by manually inputting the measurements or by connecting it to a cytology lab to obtain the data directly from a machine. The connection to the laboratory machine is not a part of the app itself.
+The Breast Cancer Diagnosis Predictor is a machine learning-powered web application built with Streamlit. It helps users predict whether a breast tumor is benign or malignant based on 30 diagnostic features derived from digitized images of fine needle aspirates (FNA) of breast masses.
 
-The app was developed as a machine learning exercice from the public dataset [Breast Cancer Wisconsin (Diagnostic) Data Set](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data). Note that this dataset may not be reliable as this project was developed for educational purposes in the field of machine learning only and not for professional use.
+The app offers:
 
-A live version of the application can be found on [Streamlit Community Cloud](https://alejandro-ao-streamlit-cancer-predict-appmain-uitjy1.streamlit.app/). 
+• Interactive inputs for mean, standard error, and worst-case tumor features
 
-## Installation
+• Multiple ML model choices: Logistic Regression, Random Forest, and SVM
 
-You can run this inside a virtual environment to make it easier to manage dependencies. I recommend using `conda` to create a new environment and install the required packages. You can create a new environment called `breast-cancer-diagnosis` by running:
+• Visualized model performance metrics (accuracy, precision, recall, F1 score)
 
-```bash
-conda create -n breast-cancer-diagnosis python=3.10 
-```
+• A model comparison bar chart
 
-Then, activate the environment:
+• Display of best hyperparameters for each model (from GridSearchCV)
 
-```bash
+• Live predictions with model confidence
+
+• Confusion matrix heatmap of the selected model
+
+⚠️ This project was developed for educational purposes only using the Breast Cancer Wisconsin (Diagnostic) dataset. It is not intended for clinical use.
+
+📂 Dataset
+We used the Breast Cancer Wisconsin (Diagnostic) Data Set, which is publicly available on Kaggle:
+
+📌 https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data
+
+🚀 Live Demo
+A live version of the app can be found on Streamlit Community Cloud.
+
+📦 Installation
+To set up the project locally:
+
+1. Create virtual environment (recommended):
+
+conda create -n breast-cancer-diagnosis python=3.10
 conda activate breast-cancer-diagnosis
-```
 
-Then, activate the environment:
+2. Install dependencies:
 
-```bash
-conda activate breast-cancer-diagnosis
-```
-
-To install the required packages, run:
-
-```bash
 pip install -r requirements.txt
-```
+This will install packages like streamlit, numpy, pandas, scikit-learn, matplotlib, seaborn, and plotly.
 
-This will install all the necessary dependencies, including Streamlit, OpenCV, and scikit-image.
+💻 Usage
+To launch the app:
 
-## Usage
-To start the app, simply run the following command:
-
-```bash
 streamlit run app/main.py
-```
 
-This will launch the app in your default web browser. You can then upload an image of cells to analyze and adjust the various settings to customize the analysis. Once you are satisfied with the results, you can export the measurements to a CSV file for further analysis.
+
+• The app will open in your default web browser
+
+• Enter tumor features using sliders or number inputs
+
+• Choose any ML model to see the prediction and confidence
+
+• Compare model performance visually
+
+📂 Project Structure:
+
+streamlit-cancer-predict-main/
+│
+├── app/
+│   └── main.py              # Main Streamlit app
+│
+├── model/
+│   ├── logreg.pkl           # Trained Logistic Regression model
+│   ├── rf.pkl               # Trained Random Forest model
+│   ├── svm.pkl              # Trained SVM model
+│   ├── scaler.pkl           # StandardScaler
+│   ├── imputer.pkl          # SimpleImputer
+│   ├── metrics.pkl          # Model evaluation metrics
+│   ├── scores.pkl           # Cross-validation scores
+│   └── best_params.pkl      # Best hyperparameters from tuning
+│
+├── assets/
+│   └── style.css            # Custom CSS for styling
+│
+├── requirements.txt         # Python package dependencies
+└── README.md                # Project documentation
+
+
+🧠 Features Used in Prediction:
+
+• Mean: radius_mean, texture_mean, area_mean, ...
+
+• Standard Error: radius_se, texture_se, ...
+
+• Worst-case: radius_worst, area_worst, ...
+
+A total of 30 tumor features are used to train and make predictions.
+
+
+📫 Contact
+📧 Email: kadithyaom@gmail.com
+🔗 GitHub: https://github.com/adithyaom18/cancer-prediction.git
