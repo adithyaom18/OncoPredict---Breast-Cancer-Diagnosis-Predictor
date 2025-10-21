@@ -57,37 +57,15 @@ streamlit run app/main.py
 
 • Compare model performance visually
 
-📂 Project Structure:
-
-streamlit-cancer-predict-main/
-│
-├── app/
-│   └── main.py              # Main Streamlit app
-│
-├── model/
-│   ├── logreg.pkl           # Trained Logistic Regression model
-│   ├── rf.pkl               # Trained Random Forest model
-│   ├── svm.pkl              # Trained SVM model
-│   ├── scaler.pkl           # StandardScaler
-│   ├── imputer.pkl          # SimpleImputer
-│   ├── metrics.pkl          # Model evaluation metrics
-│   ├── scores.pkl           # Cross-validation scores
-│   └── best_params.pkl      # Best hyperparameters from tuning
-│
-├── assets/
-│   └── style.css            # Custom CSS for styling
-│
-├── requirements.txt         # Python package dependencies
-└── README.md                # Project documentation
 
 
 🧠 Features Used in Prediction:
 
-• Mean: radius_mean, texture_mean, area_mean, ...
+• Mean: radius_mean, texture_mean, perimeter_mean, area_mean, smoothness_mean, compactness_mean, concavity_mean, concave points_mean, symmetry_mean, fractal_dimension_mean
 
-• Standard Error: radius_se, texture_se, ...
+• Standard Error: radius_se, texture_se, perimeter_se, area_se, smoothness_se, compactness_se, concavity_se, concave points_se, symmetry_se, fractal_dimension_se
 
-• Worst-case: radius_worst, area_worst, ...
+• Worst-case: radius_worst, texture_worst, perimeter_worst, area_worst, smoothness_worst, compactness_worst, concavity_worst, concave points_worst, symmetry_worst, fractal_dimension_worst
 
 A total of 30 tumor features are used to train and make predictions.
 
