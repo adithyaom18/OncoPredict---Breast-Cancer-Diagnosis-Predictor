@@ -69,13 +69,13 @@ Training Set Performance:
  [  0 169]]
 ----------------------------------------
 Test Set Performance:
-- Accuracy: 0.9737
-- Precision: 0.9762
-- Recall: 0.9535
-- F1 Score: 0.9647
+- Accuracy: 0.9649
+- Precision: 0.9756
+- Recall: 0.9302
+- F1 Score: 0.9524
 - Confusion Matrix:
 [[70  1]
- [ 2 41]]
+ [ 3 40]]
 ================================================================================
 
 🔍 XGBoost
