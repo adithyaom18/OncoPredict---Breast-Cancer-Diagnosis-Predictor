@@ -32,7 +32,7 @@ best_params = metrics["best_params"]
 # Streamlit UI
 # --------------------------------------------------
 st.set_page_config(page_title="Breast Cancer Prediction", layout="wide")
-st.title("🩺 Breast Cancer Prediction App")
+st.title("🩺 OncoPredict – Breast Cancer Diagnosis Predictor")
 
 # Load custom CSS (UNCHANGED)
 with open("assets/style.css") as f:

@@ -1,4 +1,4 @@
-          🩺 Breast Cancer Diagnosis Predictor
+          🩺 OncoPredict – Breast Cancer Diagnosis Predictor
 
 🧠 Overview: 
 
@@ -75,13 +75,13 @@ After hyperparameter tuning and evaluation, the model with the highest test accu
 
 All models were trained using the same preprocessing pipeline and evaluated using identical metrics to ensure a fair comparison.
 
-Hyperparameter tuning was performed using GridSearchCV
+• Hyperparameter tuning was performed using GridSearchCV
 
-Evaluation was done on a held-out test set
+• Evaluation was done on a held-out test set
 
-The model with the highest test accuracy was selected as the final model
+• The model with the highest test accuracy was selected as the final model
 
-Only the best model was used in the deployed application
+• Only the best model was used in the deployed application
 
 This separation of experimentation (Jupyter Notebook) and deployment (modular code) follows real-world ML best practices.
 
@@ -91,69 +91,69 @@ A total of 30 tumor features are used:
 
 📊 Mean Features
 
-radius_mean
+• radius_mean
 
-texture_mean
+• texture_mean
 
-perimeter_mean
+• perimeter_mean
 
-area_mean
+• area_mean
 
-smoothness_mean
+• smoothness_mean
 
-compactness_mean
+• compactness_mean
 
-concavity_mean
+• concavity_mean
 
-concave points_mean
+• concave points_mean
 
-symmetry_mean
+• symmetry_mean
 
-fractal_dimension_mean
+• fractal_dimension_mean
 
 📉 Standard Error Features
 
-radius_se
+• radius_se
 
-texture_se
+• texture_se
 
-perimeter_se
+• perimeter_se
 
-area_se
+• area_se
 
-smoothness_se
+• smoothness_se
 
-compactness_se
+• compactness_se
 
-concavity_se
+• concavity_se
 
-concave points_se
+• concave points_se
 
-symmetry_se
+• symmetry_se
 
-fractal_dimension_se
+• fractal_dimension_se
 
 ⚠️ Worst-Case Features
 
-radius_worst
+• radius_worst
 
-texture_worst
+• texture_worst
 
-perimeter_worst
+• perimeter_worst
 
-area_worst
+• area_worst
 
-smoothness_worst
+• smoothness_worst
 
-compactness_worst
+• compactness_worst
 
-concavity_worst
+• concavity_worst
 
-concave points_worst
+• concave points_worst
 
-symmetry_worst
+• symmetry_worst
 
-fractal_dimension_worst
+• fractal_dimension_worst
 
 📂 Dataset
 
@@ -166,6 +166,7 @@ This dataset is used strictly for educational and research purposes.
 The application is not intended for clinical or medical use.
 
 📦 Installation
+
 1️⃣ Create a virtual environment (recommended)
 conda create -n breast-cancer-diagnosis python=3.10
 conda activate breast-cancer-diagnosis
@@ -178,13 +179,13 @@ Run the Streamlit app
 streamlit run app/main.py
 
 
-The app will open in your default browser
+• The app will open in your default browser
 
-Enter tumor features using sliders or numeric inputs
+• Enter tumor features using sliders or numeric inputs
 
-View prediction results and confidence
+• View prediction results and confidence
 
-Explore model performance metrics and visualizations
+• Explore model performance metrics and visualizations
 
 🧪 Educational Disclaimer
 
