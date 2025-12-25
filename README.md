@@ -2,74 +2,197 @@
 
 🧠 Overview: 
 
-The Breast Cancer Diagnosis Predictor is a machine learning-powered web application built with Streamlit. It helps users predict whether a breast tumor is benign or malignant based on 30 diagnostic features derived from digitized images of fine needle aspirates (FNA) of breast masses.
+The Breast Cancer Diagnosis Predictor is a machine learning–powered web application built using Streamlit.
+It predicts whether a breast tumor is Benign (0) or Malignant (1) based on 30 diagnostic features extracted from digitized images of Fine Needle Aspirates (FNA) of breast masses.
 
-The app offers:
+This project follows an industry-standard ML workflow:
 
-• Interactive inputs for mean, standard error, and worst-case tumor features
+1.Experimentation & hyperparameter tuning in Jupyter Notebook
 
-• Multiple ML model choices: Logistic Regression, Random Forest, and SVM
+2.Model comparison using consistent evaluation metrics
 
-• Visualized model performance metrics (accuracy, precision, recall, F1 score)
+3.Best model selection based on test accuracy
 
-• A model comparison bar chart
+4.Modular deployment of the selected model in a Streamlit application
 
-• Display of best hyperparameters for each model (from GridSearchCV)
+🎯 Project Objective
 
-• Live predictions with model confidence
+To evaluate multiple machine learning algorithms using hyperparameter tuning, identify the best-performing model based on accuracy, and deploy the selected model using modular and production-ready code.
 
-• Confusion matrix heatmap of the selected model
+🚀 Key Features:
 
-⚠️ This project was developed for educational purposes only using the Breast Cancer Wisconsin (Diagnostic) dataset. It is not intended for clinical use.
+✅ Interactive slider + numeric inputs for all features
+
+📊 Features grouped into:
+
+1.Mean features
+
+2.Standard Error features
+
+3.Worst-case features
+
+🧪 Hyperparameter tuning (GridSearchCV) for multiple algorithms
+
+🏆 Automatic best model selection based on test accuracy
+
+📈 Visualized performance metrics:
+
+‣ Accuracy
+
+‣ Precision
+
+‣ Recall
+
+‣ F1 Score
+
+📊 Model performance comparison bar chart
+
+🧊 Confusion matrix heatmap
+
+🔍 Live predictions with confidence score
+
+🧩 Clean modular coding structure
+
+🤖 Machine Learning Models Evaluated
+
+The following algorithms were trained and tuned during experimentation:
+
+‣ Logistic Regression
+
+‣ Random Forest
+
+‣ Support Vector Machine (SVM)
+
+‣ AdaBoost
+
+‣ XGBoost
+
+‣ CatBoost
+
+After hyperparameter tuning and evaluation, the model with the highest test accuracy was selected and deployed.
+
+🧠 Model Selection Strategy
+
+All models were trained using the same preprocessing pipeline and evaluated using identical metrics to ensure a fair comparison.
+
+Hyperparameter tuning was performed using GridSearchCV
+
+Evaluation was done on a held-out test set
+
+The model with the highest test accuracy was selected as the final model
+
+Only the best model was used in the deployed application
+
+This separation of experimentation (Jupyter Notebook) and deployment (modular code) follows real-world ML best practices.
+
+🧬 Features Used for Prediction
+
+A total of 30 tumor features are used:
+
+📊 Mean Features
+
+radius_mean
+
+texture_mean
+
+perimeter_mean
+
+area_mean
+
+smoothness_mean
+
+compactness_mean
+
+concavity_mean
+
+concave points_mean
+
+symmetry_mean
+
+fractal_dimension_mean
+
+📉 Standard Error Features
+
+radius_se
+
+texture_se
+
+perimeter_se
+
+area_se
+
+smoothness_se
+
+compactness_se
+
+concavity_se
+
+concave points_se
+
+symmetry_se
+
+fractal_dimension_se
+
+⚠️ Worst-Case Features
+
+radius_worst
+
+texture_worst
+
+perimeter_worst
+
+area_worst
+
+smoothness_worst
+
+compactness_worst
+
+concavity_worst
+
+concave points_worst
+
+symmetry_worst
+
+fractal_dimension_worst
 
 📂 Dataset
-We used the Breast Cancer Wisconsin (Diagnostic) Data Set, which is publicly available on Kaggle:
 
-📌 https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data
+This project uses the Breast Cancer Wisconsin (Diagnostic) Dataset, publicly available on Kaggle:
 
-🚀 Live Demo
-A live version of the app can be found on Streamlit Community Cloud.
+🔗 https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data
+
+⚠️ Disclaimer:
+This dataset is used strictly for educational and research purposes.
+The application is not intended for clinical or medical use.
 
 📦 Installation
-To set up the project locally:
-
-1. Create virtual environment (recommended):
-
+1️⃣ Create a virtual environment (recommended)
 conda create -n breast-cancer-diagnosis python=3.10
 conda activate breast-cancer-diagnosis
 
-2. Install dependencies:
-
+2️⃣ Install dependencies
 pip install -r requirements.txt
-This will install packages like streamlit, numpy, pandas, scikit-learn, matplotlib, seaborn, and plotly.
 
 💻 Usage
-To launch the app:
-
+Run the Streamlit app
 streamlit run app/main.py
 
 
-• The app will open in your default web browser
+The app will open in your default browser
 
-• Enter tumor features using sliders or number inputs
+Enter tumor features using sliders or numeric inputs
 
-• Choose any ML model to see the prediction and confidence
+View prediction results and confidence
 
-• Compare model performance visually
+Explore model performance metrics and visualizations
 
+🧪 Educational Disclaimer
 
-
-🧠 Features Used in Prediction:
-
-• Mean: radius_mean, texture_mean, perimeter_mean, area_mean, smoothness_mean, compactness_mean, concavity_mean, concave points_mean, symmetry_mean, fractal_dimension_mean
-
-• Standard Error: radius_se, texture_se, perimeter_se, area_se, smoothness_se, compactness_se, concavity_se, concave points_se, symmetry_se, fractal_dimension_se
-
-• Worst-case: radius_worst, texture_worst, perimeter_worst, area_worst, smoothness_worst, compactness_worst, concavity_worst, concave points_worst, symmetry_worst, fractal_dimension_worst
-
-A total of 30 tumor features are used to train and make predictions.
-
+⚠️ This project is developed for learning and demonstration purposes only.
+It should not be used for medical diagnosis or clinical decision-making.
 
 📫 Contact
+
 📧 Email: kadithyaom@gmail.com
-🔗 GitHub: https://github.com/adithyaom18/cancer-prediction.git
+
+🔗 GitHub: https://github.com/adithyaom18/cancer-prediction
