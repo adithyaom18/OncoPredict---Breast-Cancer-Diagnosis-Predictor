@@ -114,6 +114,52 @@ def synced_input(feature, min_val, max_val):
 
     return st.session_state[slider_key]
 
+# ----------------------------------------
+# Default Preset Values (Approximate)
+# ----------------------------------------
+
+BENIGN_PRESET = {
+    "radius_mean": 12.0, "texture_mean": 14.0, "perimeter_mean": 78.0, "area_mean": 450.0,
+    "smoothness_mean": 0.09, "compactness_mean": 0.08, "concavity_mean": 0.05,
+    "concave points_mean": 0.03, "symmetry_mean": 0.18, "fractal_dimension_mean": 0.06,
+
+    "radius_se": 0.3, "texture_se": 1.2, "perimeter_se": 2.0, "area_se": 25.0,
+    "smoothness_se": 0.005, "compactness_se": 0.02, "concavity_se": 0.02,
+    "concave points_se": 0.01, "symmetry_se": 0.02, "fractal_dimension_se": 0.003,
+
+    "radius_worst": 13.5, "texture_worst": 18.0, "perimeter_worst": 85.0, "area_worst": 550.0,
+    "smoothness_worst": 0.12, "compactness_worst": 0.15, "concavity_worst": 0.12,
+    "concave points_worst": 0.06, "symmetry_worst": 0.25, "fractal_dimension_worst": 0.07
+}
+
+MALIGNANT_PRESET = {
+    "radius_mean": 18.0, "texture_mean": 22.0, "perimeter_mean": 120.0, "area_mean": 1000.0,
+    "smoothness_mean": 0.11, "compactness_mean": 0.18, "concavity_mean": 0.25,
+    "concave points_mean": 0.12, "symmetry_mean": 0.22, "fractal_dimension_mean": 0.07,
+
+    "radius_se": 0.7, "texture_se": 2.5, "perimeter_se": 5.0, "area_se": 80.0,
+    "smoothness_se": 0.01, "compactness_se": 0.05, "concavity_se": 0.08,
+    "concave points_se": 0.04, "symmetry_se": 0.04, "fractal_dimension_se": 0.01,
+
+    "radius_worst": 22.0, "texture_worst": 30.0, "perimeter_worst": 150.0, "area_worst": 1600.0,
+    "smoothness_worst": 0.16, "compactness_worst": 0.35, "concavity_worst": 0.45,
+    "concave points_worst": 0.20, "symmetry_worst": 0.35, "fractal_dimension_worst": 0.10
+}
+
+st.subheader("⚡ Quick Presets")
+
+col1, col2 = st.columns(2)
+
+if col1.button("🟢 Load Benign Sample"):
+    for feature, value in BENIGN_PRESET.items():
+        st.session_state[f"{feature}_input"] = value
+        st.session_state[f"{feature}_slider"] = value
+
+if col2.button("🔴 Load Malignant Sample"):
+    for feature, value in MALIGNANT_PRESET.items():
+        st.session_state[f"{feature}_input"] = value
+        st.session_state[f"{feature}_slider"] = value
+
 # --------------------------------------------------
 # Feature Inputs (UNCHANGED)
 # --------------------------------------------------
