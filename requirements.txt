@@ -1,30 +1,122 @@
-# Core build tools
-pip>=25.0
-setuptools>=70.0
-wheel
-
-# Streamlit + viz
-streamlit==1.25.0
 altair==5.0.1
-plotly==5.18.0
-matplotlib==3.7.1
-seaborn==0.12.2
-pydeck==0.9.1
-pillow>=10.0.0   # Explicitly add Pillow, use newer wheel
-
-# Data stack
-numpy==1.26.4    # Stable wheel for Py3.13
-pandas==2.2.2    # Latest wheel, avoids source build
-scipy==1.12.0    # Last version with prebuilt wheels (no Fortran needed)
-pyarrow==15.0.2  # Wheel-compatible, lighter than 20.0.0
-joblib==1.5.1
-
-# ML libraries
-scikit-learn==1.3.2
-xgboost==1.7.6
+asttokens==3.0.0
+attrs==25.3.0
+backcall==0.2.0
+beautifulsoup4==4.14.3
+bleach==6.3.0
+blinker==1.9.0
+Bottleneck @ file:///C:/miniconda3/conda-bld/bottleneck_1761938096667/work
+cachetools==5.5.2
 catboost==1.2
-shap==0.48.0
-
-# Utilities
-requests==2.32.3
+certifi==2025.6.15
+charset-normalizer==3.4.2
+click==8.2.1
+cloudpickle==3.1.1
+colorama==0.4.6
+comm==0.2.3
+contourpy @ file:///C:/b/abs_f2u2o_8s9g/croot/contourpy_1732540071787/work
+cycler @ file:///C:/Users/task_176606795043471/croot/cycler_1766068055428/work
+debugpy==1.8.17
+decorator==5.2.1
+defusedxml==0.7.1
+docopt==0.6.2
+entrypoints==0.4
+exceptiongroup==1.3.0
+executing==2.2.1
+fastjsonschema==2.21.2
+fonttools==4.58.5
+gitdb==4.0.12
+GitPython==3.1.44
+graphviz==0.21
+idna==3.10
+importlib-metadata==6.11.0
+ipykernel==7.0.1
+ipython==8.12.3
+jedi==0.19.2
+Jinja2==3.1.6
+joblib==1.5.1
+jsonschema==4.24.0
+jsonschema-specifications==2025.4.1
+jupyter_client==8.6.3
+jupyter_core==5.9.1
+jupyterlab_pygments==0.3.0
+kiwisolver==1.4.8
+llvmlite==0.43.0
+markdown-it-py==3.0.0
+MarkupSafe==3.0.2
+matplotlib==3.7.1
+matplotlib-inline==0.1.7
+mdurl==0.1.2
+mistune==3.2.0
+mkl-service==2.5.2
+mkl_fft @ file:///C:/miniconda3/conda-bld/mkl_fft_1761592981169/work
+mkl_random @ file:///C:/miniconda3/conda-bld/mkl_random_1761593075610/work
+nbclient==0.10.4
+nbconvert==7.16.6
+nbformat==5.10.4
+nest-asyncio==1.6.0
+numba==0.60.0
+numexpr @ file:///C:/miniconda3/conda-bld/numexpr_1762165723970/work
+numpy==1.24.4
+packaging==23.2
+pandas==2.0.3
+pandocfilters==1.5.1
+parso==0.8.5
+pickleshare==0.7.5
+Pillow==9.5.0
+pipreqs==0.5.0
+platformdirs==4.5.0
+plotly==5.18.0
+prompt_toolkit==3.0.52
+protobuf==3.20.3
+psutil==7.1.1
+pure_eval==0.2.3
+pyarrow==20.0.0
+pydeck==0.9.1
+Pygments==2.19.2
+Pympler==1.1
+pyparsing==3.2.3
+PyQt6==6.7.1
+PyQt6_sip @ file:///C:/b/abs_25j3xlesmj/croot/pyqt-split_1753427295085/work/pyqt_sip
+python-dateutil @ file:///C:/b/abs_3au_koqnbs/croot/python-dateutil_1716495777160/work
+pytz @ file:///C:/b/abs_f8wdzeix0n/croot/pytz_1752135878094/work
+pytz-deprecation-shim==0.1.0.post0
+pywin32==310
+pyzmq==27.1.0
+referencing==0.36.2
+requests==2.32.4
 rich==13.9.4
+rpds-py==0.26.0
+scikit-learn==1.2.2
+scipy==1.13.1
+seaborn==0.12.2
+semver==3.0.4
+shap==0.48.0
+sip @ file:///C:/b/abs_5cto136kse/croot/sip_1738856220313/work
+six @ file:///C:/b/abs_149wuyuo1o/croot/six_1744271521515/work
+slicer==0.0.8
+smmap==5.0.2
+soupsieve==2.8.1
+stack-data==0.6.3
+streamlit==1.25.0
+streamlit-shap==1.0.2
+tenacity==8.5.0
+threadpoolctl @ file:///C:/miniconda3/conda-bld/threadpoolctl_1764361785970/work
+tinycss2==1.4.0
+toml==0.10.2
+tomli @ file:///C:/b/abs_88e598m6o8/croot/tomli_1753774604115/work
+toolz==1.0.0
+tornado==6.5.1
+tqdm==4.67.1
+traitlets==5.14.3
+typing_extensions==4.14.1
+tzdata @ file:///croot/python-tzdata_1746123641790/work
+tzlocal==4.3.1
+urllib3==2.5.0
+validators==0.35.0
+watchdog==6.0.0
+wcwidth==0.2.14
+webencodings==0.5.1
+xgboost==1.7.6
+yarg==0.1.9
+zipp==3.23.0
