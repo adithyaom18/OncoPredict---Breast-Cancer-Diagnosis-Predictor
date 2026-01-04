@@ -1,5 +1,31 @@
           🩺 OncoPredict – Breast Cancer Diagnosis Predictor
 
+## 📸 Screenshots
+
+### Index Page
+<img src="screenshots\index.png" alt="Index Page" width="400">
+
+### Mean Features(INPUT)
+<img src="screenshots\Mean Features.png" alt="" width="400">
+
+### Standard Error Features(INPUT)
+<img src="screenshots\Standard Error Features.png" alt="" width="400">
+
+### Worst case Features(INPUT)
+<img src="screenshots\Worst Case Features.png" alt="" width="400">
+
+### Benign(OUTPUT)
+<img src="screenshots\Prediction.png" alt="Sales By Category" width="400">
+
+### Malignant(OUTPUT)
+<img src="screenshots\Maligpre.png" alt="" width="400">
+
+### Confusion Matrix ON Test Data
+<img src="screenshots\Confusion Features.png" alt="" width="400">
+
+### Model Performance
+<img src="screenshots\Model Performance.png" alt="" width="400">
+
 🧠 Overview: 
 
 The Breast Cancer Diagnosis Predictor is a machine learning–powered web application built using Streamlit.
@@ -168,16 +194,24 @@ The application is not intended for clinical or medical use.
 📦 Installation
 
 1️⃣ Create a virtual environment (recommended)
+```bash
 conda create -n breast-cancer-diagnosis python=3.10
+```
+Activate virtual environment
+```bash
 conda activate breast-cancer-diagnosis
+```
 
 2️⃣ Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 💻 Usage
 Run the Streamlit app
+```bash
 streamlit run app/main.py
-
+```
 
 • The app will open in your default browser
 
@@ -197,3 +231,6 @@ It should not be used for medical diagnosis or clinical decision-making.
 📧 Email: kadithyaom@gmail.com
 
 🔗 GitHub: https://github.com/adithyaom18/cancer-prediction
+
+🌐 Live Demo: https://oncopredict---breast-cancer-diagnosis-predictor.streamlit.app/
+
