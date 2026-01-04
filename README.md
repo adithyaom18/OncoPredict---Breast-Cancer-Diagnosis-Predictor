@@ -3,28 +3,28 @@
 ## 📸 Screenshots
 
 ### Index Page
-<img src="screenshots\index.png" alt="Index Page" width="600">
+<img src="screenshots\index.png" alt="Index Page">
 
 ### Mean Features(INPUT)
-<img src="screenshots\Mean Features.png" alt="" width="600">
+<img src="screenshots\Mean Features.png" alt="">
 
 ### Standard Error Features(INPUT)
-<img src="screenshots\Standard Error Features.png" alt="" width="600">
+<img src="screenshots\Standard Error Features.png" alt="">
 
 ### Worst case Features(INPUT)
-<img src="screenshots\Worst Case Features.png" alt="" width="600">
+<img src="screenshots\Worst Case Features.png" alt="">
 
 ### Benign(OUTPUT)
-<img src="screenshots\Prediction.png" alt="Sales By Category" width="600">
+<img src="screenshots\Prediction.png" alt="Sales By Category">
 
 ### Malignant(OUTPUT)
-<img src="screenshots\Maligpre.png" alt="" width="600">
+<img src="screenshots\Maligpre.png" alt="">
 
 ### Confusion Matrix ON Test Data
-<img src="screenshots\Confusion Features.png" alt="" width="600">
+<img src="screenshots\Confusion Features.png" alt="" >
 
 ### Model Performance
-<img src="screenshots\Model Performance.png" alt="" width="600">
+<img src="screenshots\Model Performance.png" alt="" >
 
 🧠 Overview: 
 
